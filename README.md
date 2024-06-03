@@ -8,3 +8,4 @@ Upon removing every occurrence of `.montgomery_model()` in the code, one will ge
 
 The code was written with the mindset of providing an idea of how the theory translates into practice and isn't optimised for performance.
 One can freely tweek the parameters in the code, like the prime `p` that defines the finite field you are working over as well as the ideals that are applied.
+Keep in mind that there can be no fraction inside your ideal as they are not supported.
