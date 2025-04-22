@@ -1,6 +1,6 @@
 # Decoding CSIDH: A Comprehensive Guide to Isogeny-Based Cryptography
 This is the uncompiled version of my Master Thesis at Leiden University.
-(The compiled version can be viewed here as the file `build_latex/main.pdf`)
+(The compiled version can be viewed here as the file [`build_latex/main.pdf`](https://github.com/jorisperrenet/MasterThesis/blob/main/build_latex/main.pdf))
 
 Also, a huge thanks to [VimTeX](https://github.com/lervag/vimtex) for making it so easy to compile my tex files and interacting with [zathura](https://github.com/pwmt/zathura) enabling hot reload. It allowed me to edit my thesis in [NeoVim](https://github.com/neovim/neovim) whilst only needing to save the file in order to see the changes in my pdf-viewer.
 
