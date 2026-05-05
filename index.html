@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decoding CSIDH — A Guide to Isogeny-Based Cryptography (Master Thesis, Joris Perrenet)</title>
+  <meta name="description" content="Master thesis by Joris Perrenet (Leiden University): an accessible, self-contained introduction to CSIDH, an isogeny-based post-quantum cryptosystem. Covers elliptic curves, the ideal class group, supersingular curves, and worked examples." />
+  <meta name="author" content="Joris Perrenet" />
+  <meta name="keywords" content="CSIDH, isogeny-based cryptography, post-quantum cryptography, elliptic curves, ideal class group, supersingular curves, master thesis, Leiden University, Joris Perrenet" />
+  <link rel="canonical" href="https://jorisperrenet.com/MasterThesis/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Decoding CSIDH — A Guide to Isogeny-Based Cryptography" />
+  <meta property="og:description" content="Master thesis by Joris Perrenet (Leiden University): an accessible introduction to CSIDH, an isogeny-based post-quantum cryptosystem." />
+  <meta property="og:url" content="https://jorisperrenet.com/MasterThesis/" />
+  <meta property="og:image" content="https://jorisperrenet.com/screenshots/master-thesis.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Decoding CSIDH — A Guide to Isogeny-Based Cryptography" />
+  <meta name="twitter:description" content="Master thesis by Joris Perrenet (Leiden University): an accessible introduction to CSIDH." />
+  <meta name="twitter:image" content="https://jorisperrenet.com/screenshots/master-thesis.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Decoding CSIDH: A Guide to Isogeny-Based Cryptography",
+    "name": "Decoding CSIDH: A Guide to Isogeny-Based Cryptography",
+    "abstract": "In today's digital age, private communication is anchored in robust encryption techniques. As the horizon of quantum computing draws nearer, current encryption methods may soon become vulnerable to quantum attacks, pointing to the need for post-quantum cryptography. The CSIDH encryption scheme, grounded in isogeny-based cryptography, emerges as a compelling candidate for such post-quantum cryptography. Understanding CSIDH requires a solid grasp of finite fields, number fields, and particularly elliptic curves. This thesis strives to break down these topics to make the innovative CSIDH approach more accessible, encouraging further exploration in the field of isogeny-based cryptography to ensure digital privacy for years to come.",
+    "author": {
+      "@type": "Person",
+      "name": "Joris Perrenet",
+      "url": "https://jorisperrenet.com/"
+    },
+    "publisher": {
+      "@type": "CollegeOrUniversity",
+      "name": "Leiden University",
+      "department": "Mathematical Institute"
+    },
+    "url": "https://jorisperrenet.com/MasterThesis/",
+    "sameAs": "https://github.com/jorisperrenet/MasterThesis",
+    "inLanguage": "en",
+    "encodingFormat": "application/pdf",
+    "associatedMedia": {
+      "@type": "MediaObject",
+      "contentUrl": "https://jorisperrenet.com/MasterThesis/decoding-csidh.pdf",
+      "encodingFormat": "application/pdf"
+    },
+    "keywords": "CSIDH, isogeny-based cryptography, post-quantum cryptography, elliptic curves, supersingular curves, ideal class group"
+  }
+  </script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; line-height: 1.6; color: #111827; background: #f9fbff; }
+    @media (prefers-color-scheme: dark) { body { background: #111827; color: #e5e7eb; } a { color: #60a5fa; } }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin-bottom: 0.25rem; }
+    .subtitle { font-size: 1.1rem; color: #6b7280; margin-top: 0; margin-bottom: 1.5rem; font-style: italic; }
+    .meta { color: #6b7280; font-size: 0.95rem; margin-bottom: 2rem; }
+    .download { display: inline-block; padding: 0.6rem 1.2rem; margin: 0.5rem 0.4rem 0 0; border: 2px solid #2563eb; border-radius: 0.4rem; font-weight: 600; }
+    .download:hover { background: #2563eb; color: #fff; text-decoration: none; }
+    .secondary { border-color: #6b7280; color: inherit; }
+    .secondary:hover { background: #6b7280; color: #fff; }
+    h2 { margin-top: 2rem; font-size: 1.2rem; }
+    nav.crumbs { font-size: 0.9rem; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+  <nav class="crumbs"><a href="https://jorisperrenet.com/">Joris Perrenet</a> &rsaquo; Master Thesis</nav>
+
+  <h1>Decoding CSIDH</h1>
+  <p class="subtitle">A Guide to Isogeny-Based Cryptography</p>
+  <p class="meta">Master thesis by <strong>Joris Perrenet</strong> &middot; Mathematical Institute, Leiden University &middot; Supervised by Dr. S.A. Arpin</p>
+
+  <p><a class="download" href="decoding-csidh.pdf">Download PDF</a>
+     <a class="download secondary" href="https://github.com/jorisperrenet/MasterThesis">View source on GitHub</a></p>
+
+  <h2>Abstract</h2>
+  <p>In today's digital age, private communication is anchored in robust encryption techniques. As the horizon of quantum computing draws nearer, current encryption methods may soon become vulnerable to quantum attacks, pointing to the need for post-quantum cryptography. The CSIDH encryption scheme, grounded in isogeny-based cryptography, emerges as a compelling candidate for such post-quantum cryptography. Understanding CSIDH requires a solid grasp of finite fields, number fields, and particularly elliptic curves. This thesis strives to break down these topics to make the innovative CSIDH approach more accessible, encouraging further exploration in the field of isogeny-based cryptography to ensure digital privacy for years to come.</p>
+
+  <h2>Topics covered</h2>
+  <ul>
+    <li>Elliptic curves over finite fields and their group law</li>
+    <li>Isogenies, supersingular curves, and the Frobenius endomorphism</li>
+    <li>The ideal class group and its action on supersingular curves</li>
+    <li>The CSIDH key-exchange protocol, derived step by step</li>
+    <li>Worked examples in Sage demonstrating the protocol on small primes</li>
+  </ul>
+
+  <h2>Citation</h2>
+  <p>Perrenet, L. J. (2024). <em>Decoding CSIDH: A Guide to Isogeny-Based Cryptography</em> [Master's thesis, Leiden University]. <a href="https://jorisperrenet.com/MasterThesis/decoding-csidh.pdf">https://jorisperrenet.com/MasterThesis/decoding-csidh.pdf</a></p>
+</body>
+</html>
