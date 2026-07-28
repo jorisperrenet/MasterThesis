@@ -12,9 +12,6 @@ npm install
 npm run dev
 ```
 
-GitHub Pages builds this directory with the shared Joris Perrenet site kit. The
-thesis PDF remains at the repository root and is linked into the static build.
-
 Also, a huge thanks to [VimTeX](https://github.com/lervag/vimtex) for making it so easy to compile my tex files and interacting with [zathura](https://github.com/pwmt/zathura) enabling hot reload. It allowed me to edit my thesis in [NeoVim](https://github.com/neovim/neovim) whilst only needing to save the file in order to see the changes in my pdf-viewer.
 
 Some notes:
